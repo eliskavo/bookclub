@@ -1,4 +1,4 @@
-import Gabrielle_Zevin_Tomorrow from './Gabrielle_Zevin_Tomorrow.jpg';
+import Gabrielle_Zevin_Tomorrow from './Assets/books/Gabrielle_Zevin_Tomorrow.jpg';
 
 export const RecentBook = () => {
     return (

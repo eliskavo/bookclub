@@ -1,0 +1,14 @@
+* {
+    text-align:center;
+}
+
+.title {
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar {
+    display: flex;
+    display: inline;
+    margin: 1rem;
+  }

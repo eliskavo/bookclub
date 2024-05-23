@@ -3,11 +3,27 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Members} from './Members';
+import {RecentBookDetail} from './RecentBookDetail';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BooksList } from './BooksList';
+import { MemberDetail } from './MemberDetail';
+
+
+const router = createBrowserRouter([
+  { path: "/", element: <App /> },
+  { path: "/bookslist", element: <BooksList /> },
+  { path: "/recentbook", element: <RecentBookDetail /> },
+  { path: "/members", element: <Members /> },
+  { path: "/members:id", element: <MemberDetail /> },
+  
+]);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <RouterProvider router={router} />
   </React.StrictMode>
 );
 

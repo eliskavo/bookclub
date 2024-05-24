@@ -1,6 +1,7 @@
 import { useParams} from "react-router-dom";
 import { Link } from "react-router-dom";
 import members from "./members-list.json";
+import './navbar.css';
 
 export const MemberDetail = () => {
     
@@ -23,12 +24,10 @@ export const MemberDetail = () => {
                 BooksList
             </Link>
             <h1>Member Detail</h1>
-            <ul>
-                <li>
-                    <p>First Name: {clen.firstName}</p>
+            
+                    <p>{clen.firstName} {clen.lastName}</p>
 
-                </li>
-            </ul>
+    
         </div>
     );
 }

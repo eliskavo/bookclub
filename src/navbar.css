@@ -1,0 +1,27 @@
+/* navbar.css */
+.navbar {
+    display: inline-block;
+    margin: 0 0.5rem 0 1rem; /* Relative margin */
+    padding: 1rem; /* Relative padding */
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem; /* Relative font size */
+  }
+  
+  .navbar:hover {
+    color: #007BFF;
+  }
+  
+  .title {
+    font-size: 2rem; /* Relative font size */
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .title:hover {
+    color: #007BFF;
+  }
+  
+  /* Responsive adjustments */
+  

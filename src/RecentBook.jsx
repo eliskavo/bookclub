@@ -1,5 +1,7 @@
 import Gabrielle_Zevin_Tomorrow from "./Assets/books/Gabrielle_Zevin_Tomorrow.jpg";
 import { Link } from "react-router-dom";
+import './RecentBook.css'
+import './navbar.css';
 
 export const RecentBook = () => {
   return (

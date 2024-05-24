@@ -1,0 +1,6 @@
+.navbar {
+    display: flex;
+    display: inline;
+    margin: 1rem;
+    text-decoration: none;
+  }

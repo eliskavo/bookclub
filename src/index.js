@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './Pages/App';
 import reportWebVitals from './reportWebVitals';
-import {Members} from './Members';
-import {RecentBookDetail} from './RecentBookDetail';
+import {Members} from './Pages/Members';
+import {RecentBookDetail} from './Pages/RecentBookDetail';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { BooksList } from './BooksList';
-import { MemberDetail } from './MemberDetail';
+import { BooksList } from './Pages/BooksList';
+import { MemberDetail } from './Pages/MemberDetail';
 
 
 const router = createBrowserRouter([

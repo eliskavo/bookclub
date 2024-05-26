@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
-import Gabrielle_Zevin_Tomorrow from "./Assets/books/Gabrielle_Zevin_Tomorrow.jpg";
-import './navbar.css';
+import Gabrielle_Zevin_Tomorrow from "../Assets/books/Gabrielle_Zevin_Tomorrow.jpg";
+import '../navbar.css';
+import books from "../data/books.json";
+import members from "../data/members-list.json"
+import { RecentBook } from "./RecentBook";
+
 
 export const RecentBookDetail = () => {
     return (
@@ -12,16 +16,12 @@ export const RecentBookDetail = () => {
           Members
         </Link>
         <Link to="/recentbook" className="navbar">
-          RecentBook
+          Recent Book
         </Link>
         <Link to="/bookslist" className="navbar">
-          BooksList
+          Books
         </Link>
-        <h1>RecentBook:</h1>
-        <p>Chosen by: </p>
-        <h2>Tomorrow, and Tomorrow, and Tomorrow</h2>
-        <h3>by Gabrielle Zevin</h3>
-        <img src={Gabrielle_Zevin_Tomorrow} alt="Gabrielle_Zevin_Tomorrow" />
+        <RecentBook />
       </div>
     );
 }

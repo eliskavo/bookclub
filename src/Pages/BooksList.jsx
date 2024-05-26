@@ -10,10 +10,10 @@ export const BooksList = () => {
         Members
       </Link>
       <Link to="/recentbook" className="navbar">
-        RecentBook
+        Recent Book
       </Link>
       <Link to="/bookslist" className="navbar">
-        BooksList
+        Books
       </Link>
       <h1>Books List Davite ahoj</h1>
     </div>

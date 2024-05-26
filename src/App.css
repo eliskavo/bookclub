@@ -3,8 +3,13 @@
   display: inline;
   margin: 1rem;
   text-decoration: none;
+  
 }
 
 a.active {
   font-style: bold;
 } */
+
+* {
+  color: #333;
+}

@@ -1,9 +1,9 @@
 [
-	{ "id": 1,  "title": "Brave New World", "author": "Aldous Huxley", "member": "Davit"},
-	{ "id": 2,  "title": "Tomorrow, and Tomorrow, and Tomorrow",  "author": "Gabrielle Zevin", "member": "Pavel"},
-	{ "id": 3,  "title": "The Mountains Sing",  "author": "Nguyễn Phan Quế Mai", "member": "Eliška"},
-	{ "id": 4,  "title": "The Seven Husbands of Evelyn Hugo",  "author": "Taylor Jenkins Reid", "member":"Míša"},
-	{ "id": 5,  "title": "The Unbearable Lightness of Being",  "author": "Milan Kundera", "member": "Russell"},
-	{ "id": 6,  "title": "Wild Sheep Chase",  "author": "Haruki Murakami", "member": "Damjan"},
-	{ "id": 7,  "title": "The Midnight Library",  "author": "Matt Haig", "member": "Kiki"}
-]
+	{ "id": 1, "title": "Brave New World", "author": "Aldous Huxley", "member": "Davit", "isRead": true },
+	{ "id": 2, "title": "Tomorrow, and Tomorrow, and Tomorrow", "author": "Gabrielle Zevin", "member": "Pavel", "isRead": true },
+	{ "id": 3, "title": "The Mountains Sing", "author": "Nguyễn Phan Quế Mai", "member": "Eliška", "isRead": false },
+	{ "id": 4, "title": "The Seven Husbands of Evelyn Hugo", "author": "Taylor Jenkins Reid", "member": "Míša", "isRead": false },
+	{ "id": 5, "title": "The Unbearable Lightness of Being", "author": "Milan Kundera", "member": "Russell", "isRead": false },
+	{ "id": 6, "title": "Wild Sheep Chase", "author": "Haruki Murakami", "member": "Damjan", "isRead": false },
+	{ "id": 7, "title": "The Midnight Library", "author": "Matt Haig", "member": "Kiki", "isRead": false }
+  ]  

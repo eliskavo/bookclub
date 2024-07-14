@@ -1,5 +1,5 @@
 [
-	{ "id": 1,  "title": "Brave New World", "author": "Aldous Huxley", "member": "Davit"},
+	{ "id": 1,  "title": "Brave New World", "author": "Aldous Huxley", "member": "Davit", "status": "read"},
 	{ "id": 2,  "title": "Tomorrow, and Tomorrow, and Tomorrow",  "author": "Gabrielle Zevin", "member": "Pavel"},
 	{ "id": 3,  "title": "The Mountains Sing",  "author": "Nguyễn Phan Quế Mai", "member": "Eliška"},
 	{ "id": 4,  "title": "The Seven Husbands of Evelyn Hugo",  "author": "Taylor Jenkins Reid", "member":"Míša"},

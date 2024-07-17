@@ -33,7 +33,7 @@ export const BooksList = () => {
 
             <table className="min-w-full text-left text-sm font-light text-surface dark:text-white">
               <thead className="border-b border-neutral-200 font-medium dark:border-white/10">
-                <tr className="border-b border-neutral-200 dark:border-white/10 transition duration-300 ease-in-out hover:bg-neutral-100 dark:hover:bg-neutral-600">
+                <tr className="border-b border-neutral-200 dark:border-white/10 transition duration-300 ease-in-out hover:bg-neutral-100 dark:hover:bg-neutral-150">
                   <th scope="col" className="px-6 py-4">
                     Title
                   </th>
@@ -50,7 +50,7 @@ export const BooksList = () => {
                 {books.map((item) => (
                   <tr
                     key={item.id}
-                    className="border-b border-neutral-200 dark:border-white/10 transition duration-300 ease-in-out hover:bg-neutral-100 dark:hover:bg-neutral-600"
+                    className="border-b border-neutral-200 dark:border-white/10 transition duration-300 ease-in-out hover:bg-neutral-100 dark:hover:bg-neutral-150"
                   >
                     <td className="whitespace-nowrap px-6 py-4 font-medium">
                       {item.title}
@@ -69,13 +69,13 @@ export const BooksList = () => {
               </tbody>
             </table>
             <div>
-              <h1 className="text-3xl text-center font-bold">
-                Choose a new book
+              <h1 className="text-3xl text-center font-bold mt-20">
+                Choose a next book
               </h1>
               <button
-                type="button"
-                className="inline-block rounded-full bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-200 focus:bg-primary-accent-200 focus:outline-none focus:ring-0 active:bg-primary-accent-200 motion-reduce:transition-none dark:bg-primary-300 dark:hover:bg-primary-400 dark:focus:bg-primary-400 dark:active:bg-primary-400"
+                className="bg-gray-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-full m-8"
                 onClick={ handleButtonClick }
+              
               >
                 Generate Book
               </button>

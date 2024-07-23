@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
 import books from "../data/books.json";
 import { BookGenerator } from "../Components/BookGenerator";
 import { useState } from "react";
+import { NavBar } from "../Components/NavBar";
 
 export const BooksList = () => {
 
@@ -13,18 +13,7 @@ export const BooksList = () => {
 
   return (
     <div>
-      <Link to="/" className="title">
-        <h1>Buk klab</h1>
-      </Link>
-      <Link to="/members" className="navbar">
-        Members
-      </Link>
-      <Link to="/recentbook" className="navbar">
-        Recent Book
-      </Link>
-      <Link to="/bookslist" className="navbar">
-        Books
-      </Link>
+      <NavBar />
       <h1 className="text-5xl text-center font-bold">List of books</h1>
       <div className="flex flex-col">
         <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">

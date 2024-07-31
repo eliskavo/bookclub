@@ -1,26 +1,24 @@
 /* navbar.css */
 .navbar {
     display: inline-block;
-    margin: 0 0.5rem 0 1rem; /* Relative margin */
+    margin: 0 0.5rem 0 0.5rem; /* Relative margin */
     padding: 1rem; /* Relative padding */
     text-decoration: none;
-    color: #333;
-    font-size: 1rem; /* Relative font size */
+    color: black;
+    font-size: 1.5rem; /* Relative font size */
   }
   
   .navbar:hover {
-    color: #007BFF;
+    color: #ffdd00;
   }
-  
-  .title {
-    font-size: 2rem; /* Relative font size */
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .title:hover {
-    color: #007BFF;
+
+  .text-shadow-navbar {
+    font-family: "Archivo Black", sans-serif;
+    /* color: transparent;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black; */
+    /* text-shadow: 0px 0px 0 #000, 0px 0px 0 #000, 0px 2px 0 #000, 2px 2px 0 #000; */
   }
   
   /* Responsive adjustments */

@@ -10,6 +10,93 @@ a.active {
   font-style: bold;
 } */
 
-* {
+/* * {
   color: #333;
+  font-family: 'Work Sans', sans-serif;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Francois+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Francois+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.stroke-text {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 6rem;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 1px -1px 0 #000, -1px -1px 0 #000, -1px 3px 0 #000, 3px 3px 0 #000;
+}
+
+.stroke-text:hover {
+  -webkit-text-fill-color: #ffdd00; /* Vyplní text žlutou barvou při hoveru */
+}
+
+.double-border::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2px solid #333; /* Same color as your button border */
+  pointer-events: none; /* Make sure the pseudo-element doesn't interfere with button interactions */
+}
+
+.section-title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 2.5rem;
+  text-align: justify;
+  /* -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 1px -1px 0 #000, -1px -1px 0 #000, -1px 3px 0 #000, 3px 3px 0 #000; */
+  margin: 2rem 0.5rem 0 8rem; /* Relative margin */
+}
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.member-photo {
+  width: 200px;
+  height: 250px;
+  background-color: #f7f7f7;
+  margin-bottom: 1rem;
+  border: 2px solid black;
+}
+
+.member-name {
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+}
+
+.member-name:hover {
+  color: #ffdd00; /* Žlutá barva při hoveru */
+}
+
+.paragraph {
+  margin: 1.5rem 40rem 1.5rem 8rem;
+  text-align: justify;
+  padding: 1rem;
+
 }

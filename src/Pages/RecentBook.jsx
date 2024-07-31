@@ -1,5 +1,5 @@
 import Gabrielle_Zevin_Tomorrow from "../Assets/books/Gabrielle_Zevin_Tomorrow.jpg";
-import { Link } from "react-router-dom";
+import { NavBar } from "../Components/NavBar";
 import '../RecentBook.css'
 import '../navbar.css';
 import books from "../data/books.json";
@@ -19,7 +19,7 @@ export const RecentBook = () => {
 
   return (
     <div>
-      <h1>Recent Book:</h1>
+      <h1 className ="section-title">Recent Book:</h1>
       <p>Chosen by: {chosenMember.firstName} {chosenMember.lastName}</p>
       <h2>{books[chosenBookIndex].title}</h2>
       <h3>by {books[chosenBookIndex].author}</h3>

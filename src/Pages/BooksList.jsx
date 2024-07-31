@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
 import books from "../data/books.json";
 import { BookGenerator } from "../Components/BookGenerator";
 import { useState } from "react";
+import { NavBar } from "../Components/NavBar";
+import "../App.css";
 
 export const BooksList = () => {
 
@@ -13,19 +14,8 @@ export const BooksList = () => {
 
   return (
     <div>
-      <Link to="/" className="title">
-        <h1>Buk klab</h1>
-      </Link>
-      <Link to="/members" className="navbar">
-        Members
-      </Link>
-      <Link to="/recentbook" className="navbar">
-        Recent Book
-      </Link>
-      <Link to="/bookslist" className="navbar">
-        Books
-      </Link>
-      <h1 className="text-5xl text-center font-bold">List of books</h1>
+      <NavBar />
+      <h1 className ="section-title">list of books</h1>
       <div className="flex flex-col">
         <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
@@ -73,7 +63,7 @@ export const BooksList = () => {
                 Choose a next book
               </h1>
               <button
-                className="bg-gray-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-full m-8"
+                className="bg-white-400 hover:bg-gray-100 text-black font-bold py-2 px-4 rounded-none m-8 border-solid border-2 border-black double-border"
                 onClick={ handleButtonClick }
               
               >

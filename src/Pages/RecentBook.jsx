@@ -19,7 +19,7 @@ export const RecentBook = () => {
 
   return (
     <div>
-      <h1>Recent Book:</h1>
+      <h1 className ="section-title">Recent Book:</h1>
       <p>Chosen by: {chosenMember.firstName} {chosenMember.lastName}</p>
       <h2>{books[chosenBookIndex].title}</h2>
       <h3>by {books[chosenBookIndex].author}</h3>

@@ -2,6 +2,7 @@ import { useParams} from "react-router-dom";
 import members from "../data/members-list.json";
 import '../navbar.css';
 import { NavBar } from "../Components/NavBar";
+import "../App.css";
 
 export const MemberDetail = () => {
     
@@ -12,7 +13,7 @@ export const MemberDetail = () => {
     return (
         <div>
             <NavBar />
-            <h1>Member Detail</h1>
+            <h1 className ="section-title">Member Detail</h1>
             
                     <p>{clen.firstName} {clen.lastName}</p>
 

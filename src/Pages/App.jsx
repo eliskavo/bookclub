@@ -1,7 +1,7 @@
 import "../App.css";
 import { RecentBook } from "./RecentBook";
 import { NavBar} from "../Components/NavBar";
-import "../navbar.css";
+import "../Styling/navbar.css";
 
 function App() {
 

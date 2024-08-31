@@ -8,6 +8,7 @@ import {RecentBookDetail} from './Pages/RecentBookDetail';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { BooksList } from './Pages/BooksList';
 import { MemberDetail } from './Pages/MemberDetail';
+import { JoinBukKlab } from './Pages/JoinBukKlab';
 
 
 const router = createBrowserRouter([
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
   { path: "/recentbook", element: <RecentBookDetail /> },
   { path: "/members", element: <Members /> },
   { path: "/members/:id", element: <MemberDetail /> },
+  { path: "/join", element: <JoinBukKlab /> },
   
 ]);
 

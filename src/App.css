@@ -1,25 +1,5 @@
-/* .navbar {
-  display: flex;
-  display: inline;
-  margin: 1rem;
-  text-decoration: none;
-  
-}
-
-a.active {
-  font-style: bold;
-} */
-
-/* * {
-  color: #333;
-  font-family: 'Work Sans', sans-serif;
-} */
-
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Francois+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Francois+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap');
 
 * {
   font-family: "Poppins", sans-serif;
@@ -99,4 +79,41 @@ a.active {
   text-align: justify;
   padding: 1rem;
 
+}
+
+
+.landing-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap; /* Umožňuje přesun divů pod sebe na menších obrazovkách */
+}
+
+.section-title {
+  flex: 1;
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid #000;
+  box-sizing: border-box; /* Zajistí, že padding neovlivní šířku */
+}
+
+.divtest {
+  flex: 1;
+  position: relative;
+  height: 50vh;
+  border: 1px solid #000;
+  box-sizing: border-box; /* Zajistí, že padding neovlivní šířku */
+  overflow: hidden; /* Zamezí přetékání písmen ven */
+}
+
+/* Media Query pro menší obrazovky */
+@media (max-width: 768px) {
+  .landing-section {
+    flex-direction: column; /* Divy se seřadí pod sebe */
+  }
+
+  .section-title, .divtest {
+    width: 100%; /* Divy budou mít 100% šířku */
+    height: auto; /* Výšku můžeš přizpůsobit dle potřeby */
+  }
 }

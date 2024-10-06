@@ -1,8 +1,8 @@
 import { useParams} from "react-router-dom";
 import members from "../data/members-list.json";
-import '../navbar.css';
+import "../Styling/navbar.css";
 import { NavBar } from "../Components/NavBar";
-import "../App.css";
+import "../Styling/navbar.css";
 
 export const MemberDetail = () => {
     

@@ -1,0 +1,51 @@
+/* navbar.css */
+.header {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between logo and navbar */
+  align-items: center; /* Vertically centers items */
+  padding: 1rem 4rem; /* Padding around the container */
+}
+
+/* Style for the logo */
+.logo {
+  font-size: 2.5rem; /* Adjust the font size of the logo */
+  font-weight: 800; /* Make the logo text bold */
+  text-decoration: none; /* Remove underline */
+  color: black; /* Logo color */
+  display: flex; /* Flex to ensure alignment within the logo */
+  align-items: center; /* Center the content of the logo if needed */
+}
+
+/* Navbar container styling */
+.navbar-container {
+  display: flex; /* Flexbox for navbar links */
+  align-items: center; /* Vertically centers the navbar items */
+  gap: 1rem; /* Controls the spacing between navbar items */
+}
+
+/* Navbar link styling */
+.navbar {
+  margin: 0; /* Reset margin */
+  padding: 0.25rem 0.75rem; /* Padding for navbar links */
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none; /* Remove underline */
+}
+  
+  .navbar:hover {
+    color: #ffdd00;
+  }
+
+  .hover-color {
+    color: #ffdd00; /* Changes the text color to yellow on hover */
+}
+
+  .text-shadow-navbar {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+  .text-shadow-navbar-main {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+  }
+  

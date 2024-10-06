@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
-import '../App.css';
+import '../Styling/navbar.css'; // Ensure the path is correct
 
 export const HoverText = ({ text }) => {
   const [hoverIndex, setHoverIndex] = useState(null);
 
   return (
-    <div id="text-container">
+    <div className="logo">
       {text.split('').map((char, index) => (
         <span
           key={index}
-          className={`stroke-text ${hoverIndex === index ? 'hover-fill' : ''}`}
+          className={`logo ${hoverIndex === index ? 'hover-color' : ''}`}
           onMouseEnter={() => setHoverIndex(index)}
           onMouseLeave={() => setHoverIndex(null)}
         >
-          {char}
+          {char === ' ' ? '\u00A0' : char} {/* Handle spaces */}
         </span>
       ))}
     </div>

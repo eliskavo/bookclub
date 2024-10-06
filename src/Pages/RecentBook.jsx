@@ -1,7 +1,7 @@
 import Gabrielle_Zevin_Tomorrow from "../Assets/books/Gabrielle_Zevin_Tomorrow.jpg";
 import { NavBar } from "../Components/NavBar";
 import '../RecentBook.css'
-import '../navbar.css';
+import "../Styling/navbar.css";
 import books from "../data/books.json";
 import members from "../data/members-list.json";
 

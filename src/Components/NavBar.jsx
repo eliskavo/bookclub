@@ -1,22 +1,29 @@
 import { NavLink } from "react-router-dom";
 import { HoverText } from "./HoverText";
+import "../Styling/navbar.css";
 
 export const NavBar = () => {
   return (
-    <div>
-      <NavLink to="/" className="title">
-        {/* <h1 className="stroke-text">buk klab</h1> */}
-      <HoverText text="buk klab" />
+    <div className="header">
+      {/* Logo on the left */}
+      <NavLink to="/" className="logo">
+        <HoverText text="buk klab" />
       </NavLink>
-      <NavLink to="/recentbook" className="navbar text-shadow-navbar">
-        recent book
-      </NavLink>
-      <NavLink to="/members" className="navbar text-shadow-navbar">
-        members
-      </NavLink>
-      <NavLink to="/bookslist" className="navbar text-shadow-navbar">
-        books
-      </NavLink>
+      {/* Navbar on the right */}
+      <div className="navbar-container">
+        <NavLink to="/recentbook" className="navbar text-shadow-navbar">
+          about
+        </NavLink>
+        <NavLink to="/bookslist" className="navbar text-shadow-navbar">
+          books
+        </NavLink>
+        <NavLink to="/members" className="navbar text-shadow-navbar">
+          members
+        </NavLink>
+        <NavLink to="/join" className="navbar text-shadow-navbar-main">
+          join buk klab
+        </NavLink>
+      </div>
     </div>
   );
 };

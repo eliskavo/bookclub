@@ -14,11 +14,11 @@ export const NavBar = () => {
         <NavLink to="/recentbook" className="navbar text-shadow-navbar">
           about
         </NavLink>
-        <NavLink to="/members" className="navbar text-shadow-navbar">
-          members
-        </NavLink>
         <NavLink to="/bookslist" className="navbar text-shadow-navbar">
           books
+        </NavLink>
+        <NavLink to="/members" className="navbar text-shadow-navbar">
+          members
         </NavLink>
         <NavLink to="/join" className="navbar text-shadow-navbar-main">
           join buk klab
